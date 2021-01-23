@@ -12,6 +12,7 @@ body {
 .wrapper {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .todo {
@@ -86,29 +87,63 @@ body {
   padding-left: 5px;
   padding-right: 5px;
 }
+.todo__col {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .todo__status {
   width: 100%;
   background: #ebecf0;
   padding: 15px 10px;
   border-radius: 5px;
 }
-.todo__status .status-title {
+.todo__status-bottom {
+  padding-top: 10px;
+}
+.todo__status-bottom a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.todo__status-bottom a i.fa {
+  margin-left: auto;
+}
+.todo__title {
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
 }
-.todo__status .status-title span {
+.todo__title span {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 15px;
 }
-.todo__status .status-content {
+.todo__item {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 5px;
+  border: 0px solid rgba(123, 123, 123, 0.498039);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
   cursor: pointer;
 }
-.todo__status .status-content.do-drag {
-  background-color: red;
+.todo__add-status {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.todo__add-status a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.todo__add-status a span {
+  font-size: 20px;
+}
+.todo__add-status:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .todo .box-search {
   position: relative;

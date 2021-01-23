@@ -80,34 +80,64 @@
 
       </div>
       <div class="todo__container">
-        <div class="row todo__row">
-          <div class="col col-3">
-            <div class="todo__status js-todo">
-              <div class="status-title">
+        <div class="row todo__row js-todo-row">
+          <div class="todo__col">
+            <div class="todo__status">
+              <div class="todo__title">
                 <span>BUG</span>
                 <a href="#" class="status-options">
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </a>
               </div>
-              <div class="status-content js-status-content" draggable="true">
-                Content
+              <div class="todo__body js-todo-body">
+                <div>
+                  <div class="todo__item js-todo__item">
+                    Content 1
+                  </div>
+                </div>
+                <div>
+                  <div class="todo__item js-todo__item">
+                    Content 2
+                  </div>
+                </div>
+                <div>
+                  <div class="todo__item js-todo__item">
+                    Content 3
+                  </div>
+                </div>
+                <div>
+                  <div class="todo__item js-todo__item">
+                    Content 4
+                  </div>
+                </div>
+                <div>
+                  <div class="todo__item js-todo__item">
+                    Content 5
+                  </div>
+                </div>
+              </div>
+              <div class="todo__status-bottom js-add-content">
+                <a href="#">
+                  <svg width="24" height="24" role="presentation" focusable="false" viewBox="0 0 24 24">
+                    <path d="M12 3a1 1 0 00-1 1v7H4a1 1 0 100 2h7v7a1 1 0 102 0v-7h7a1 1 0 100-2h-7V4a1 1 0 00-1-1z" fill="currentColor"></path>
+                  </svg>
+                  <span>Thêm nội dung</span>
+                  <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="col col-3">
-            <div class="todo__status js-todo">
-              <div class="status-title">
-                <span>BUG</span>
-                <a href="#" class="status-options">
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="status-content js-status-content" draggable="true">
-                Content
-              </div>
-            </div>
+            <div class="todo__add-status js-add-status">
+              <a href="#">
+                <svg width="24" height="24" role="presentation" focusable="false" viewBox="0 0 24 24">
+                  <path d="M12 3a1 1 0 00-1 1v7H4a1 1 0 100 2h7v7a1 1 0 102 0v-7h7a1 1 0 100-2h-7V4a1 1 0 00-1-1z" fill="currentColor"></path>
+                </svg>
+                <span>Thêm mới</span>
+              </a>
+            </div>  
           </div>
-        </div>  
+        </div>
       </div>
     </div>
   </section>
@@ -123,6 +153,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="asset/scripts/jquery.min.js"></script>
+    <script src="asset/scripts/jquery.dad.js"></script>
     <script src="js/app.js"></script>
 </body>
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="asset/styles/reset.css">
+  <link rel="stylesheet" href="asset/styles/bootstrap.css">
+  <link rel="stylesheet" href="asset/styles/demo.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="row area-3 area area-flex dad-droppable">
+          <div>
+            <div class="item"><span>1</span></div>
+          </div>
+          <div>
+            <div class="item"><span>2</span></div>
+          </div>
+          <div>
+            <div class="item"><span>3</span></div>
+          </div>
+          <div>
+            <div class="item"><span>4</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="row area-3 area area-flex dad-droppable">
+          <div>
+            <div class="item"><span>1</span></div>
+          </div>
+          <div>
+            <div class="item"><span>2</span></div>
+          </div>
+          <div>
+            <div class="item"><span>3</span></div>
+          </div>
+          <div>
+            <div class="item"><span>4</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="asset/scripts/jquery.min.js"></script>
+  <script src="asset/scripts/jquery.dad.js"></script>
+  <script>
+    $(function () {
+      // Dropzone example
+      var droppable = $(".dad-droppable").dad({
+        placeholderTarget: ".item"
+      });
+    });
+  </script>
+</body>
+
+</html>
